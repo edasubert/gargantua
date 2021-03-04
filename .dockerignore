@@ -5,4 +5,4 @@ logs/
 **/*.class
 __pycache__
 Dockerfile
-requirements.txt
+.dockerignore
