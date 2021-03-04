@@ -1,0 +1,8 @@
+logs/
+.git
+.cache
+*.md
+**/*.class
+__pycache__
+Dockerfile
+requirements.txt
