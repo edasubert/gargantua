@@ -5,8 +5,6 @@ Sentence Aligner presented based on Fabienne Braune, Alexander Fraser. Source co
 
 Use the [Docker](https://www.docker.com/) image. Just run ```docker run -p 80:80 eduardsubert/gargantua```. This works on all platforms supported by Docker. (Run ```docker run -p 80:[PORT] eduardsubert/gargantua``` to publish the API to a ```[PORT]``` of your choice.)
 
-## Using Gentle
-
 By default, the aligner listens at http://localhost (unless you changed the published port) for POST requests. There is a documentation of the API at http://localhost/docs
 
 Here's an example of how to use the API with CURL:
