@@ -1,5 +1,5 @@
 from typing import Dict, List
-from fastapi import FastAPI, HTTPException, BackgroundTasks
+from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 import subprocess
 
@@ -161,7 +161,7 @@ async def startup():
     },
 )
 async def align_text(
-    data: InputData, background_tasks: BackgroundTasks
+    data: InputData
 ):  # async in order to be blocking for the file access to work
     try:
         write_files(data)
@@ -171,7 +171,7 @@ async def align_text(
 
         result = read_files()
 
-        background_tasks.add_task(prepare_filesystem)
+        await prepare_filesystem()
 
         return OutputData(
             source_language=[line for line in result["aligned_sentences_source_language"].split("\n") if line],
