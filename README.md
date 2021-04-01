@@ -1,5 +1,5 @@
 # Gargantua - server
-Sentence Aligner presented based on Fabienne Braune, Alexander Fraser. Source code of the aligner: https://github.com/braunefe/Gargantua
+Sentence Aligner based on Fabienne Braune, Alexander Fraser. Source code of the aligner: https://github.com/braunefe/Gargantua
 
 ## Getting Started
 
